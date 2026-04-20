@@ -80,7 +80,7 @@ export function Tab(props: Tab.Props) {
   const { title, children } = props
   const value = toKebabCase(title)
   return (
-    <BaseTabs.Panel className="vocs:pt-4" value={value}>
+    <BaseTabs.Panel className="vocs:pt-4" value={value} keepMounted={false}>
       {children}
     </BaseTabs.Panel>
   )
